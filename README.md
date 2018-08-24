@@ -1,5 +1,11 @@
 # tmall_ssm_generator
-SSM project tmall store /idea2018 mysq8l tomcat9 jdk10
+SSM project
+## 项目介绍
+模仿天猫商城  分为前台商城和后台管理两大部分
+## 环境
+idea2018.1.4 mysql8.0（alibaba连接池） tomcat9.0 jdk10
+
+## 注意事项
 
 1.此项目环境与原项目的开发环境不同，相互之间无法正常部署，请自行选择，非要部署需要自行更改很多jar包版本和设置。
 
