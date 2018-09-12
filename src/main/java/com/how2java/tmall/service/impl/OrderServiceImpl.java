@@ -55,7 +55,7 @@ public class OrderServiceImpl implements OrderService {
         setUser(result);//向订单填入用户
         return result;
     }
-
+//    有两条查询语句 所以要开启事物管理
     @Override
     @Transactional(propagation= Propagation.REQUIRED,rollbackForClassName="Exception")
     public float add(Order order, List<OrderItem> orderItems) {
