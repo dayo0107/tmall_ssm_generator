@@ -41,6 +41,8 @@
                         var pid = ${p.id};
                         var num= $(".productNumberSetting").val();
                         var addCartpage = "foreaddCart";
+                        var oldCartTotal = ${cartTotalItemNumber};
+                        var newCartTotal = Number(oldCartTotal)+Number(num);
                         $.get(
                             addCartpage,
                             {"pid":pid,"num":num},
@@ -51,7 +53,7 @@
                                     $(".addCartButton").css("background-color","lightgray")
                                     $(".addCartButton").css("border-color","lightgray")
                                     $(".addCartButton").css("color","black")
-
+                                    $("#cartTotal").html(newCartTotal);
                                 }
                                 else{
 
